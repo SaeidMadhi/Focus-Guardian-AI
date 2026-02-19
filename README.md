@@ -23,7 +23,6 @@ By leveraging TensorFlow.js, the application processes the webcam feed entirely 
 * **Deployment:** Vercel
 
 ## 📸 Preview
-*(Add your GIF or Screenshot here)*
 ![Focus Guardian Preview](./assets/demo.gif)
 
 ---
