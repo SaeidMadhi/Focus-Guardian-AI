@@ -1,30 +1,44 @@
-# 👮‍♂️ Focus Guardian | AI-Powered Focus Assistant
+# 🛡️ Focus Guardian | AI-Powered Productivity Assistant
 
-> ⚠️ **Note:** The source code for this project is kept **Private** to protect intellectual property and custom detection algorithms. This repository serves as a technical showcase and portfolio piece.
+> ⚠️ **Portfolio Showcase:** The source code for this repository is kept **Private** to protect custom detection algorithms and intellectual property. This repository serves as a technical portfolio piece demonstrating the project's architecture, features, and user interface.
 
-🔗 **[Live Demo: Try Focus Guardian Here](https://focus-guardian-zeta.vercel.app)**
+🔗 **[Live Demo: Try Focus Guardian Here](https://focus-guardian-zeta.vercel.app/)**
 
-## 📌 Overview
-Focus Guardian is a web-based, real-time focus tracking application designed to help users maintain deep work sessions. It utilizes in-browser Artificial Intelligence (Computer Vision) to monitor user presence and ensure a distraction-free environment. 
+## 📖 About The Project
+Focus Guardian is a real-time, browser-based focus tracking application designed to enhance deep work sessions. It acts as a strict digital guardian, utilizing Computer Vision to monitor user presence and actively discourage distractions, such as picking up a smartphone during focus time.
 
-By leveraging TensorFlow.js, the application processes the webcam feed entirely offline. **Zero images or data are transmitted to any server**, ensuring absolute user privacy.
+## 💻 Languages & Tech Stack
+This project was built entirely from scratch using modern web technologies and client-side machine learning:
+
+**Core Languages:**
+* **JavaScript (ES6+):** The primary language handling the application's core logic, asynchronous AI model loading, and real-time state management.
+* **CSS3:** Used for a modern, glass-morphism UI design, responsive layouts, and dynamic RTL/LTR direction rendering.
+* **HTML5 / JSX:** Semantic structuring of the application interface.
+
+**Frameworks & Libraries:**
+* **React.js:** Component-based UI architecture heavily relying on React Hooks (`useState`, `useEffect`, `useRef`, `useCallback`) for efficient rendering and state lifecycle management.
+* **TensorFlow.js (`@tensorflow/tfjs`):** The core engine running machine learning models directly inside the browser.
+* **COCO-SSD Model:** A pre-trained object detection model used to classify and track specific entities (e.g., `person`, `cell phone`).
+* **React-Webcam:** For secure, background access to the device's media stream without displaying it to the user.
+
+**Build Tools & Deployment:**
+* **Vite:** Blazing fast frontend build tool and development server.
+* **Vercel:** Deployed on Vercel's edge network for optimal performance.
 
 ## ✨ Core Features
-* **Real-time AI Detection:** Continuously monitors the webcam feed to verify if the user is present at their workstation.
-* **Smart Distraction Recognition:** Actively detects if the user is holding a mobile phone (`cell phone` detection) and instantly triggers an alert to break the distraction.
-* **Mathematical Bounding-Box Logic:** Calculates the overlap between the "Person" and "Phone" bounding boxes to differentiate between a phone lying safely on the desk versus a phone being actively held.
-* **100% Privacy-First:** Local processing guarantees that camera data never leaves the user's device.
-* **Multi-Language Support (i18n):** Fully localized interface supporting English, Persian (RTL), and Turkish.
+* **100% Client-Side Privacy:** All camera feed processing happens locally in the browser memory. Zero images or user data are ever saved or transmitted to any external server.
+* **Multi-Language & RTL Support (i18n):** Fully localized interface supporting English, Turkish, and Persian, including dynamic Right-to-Left (RTL) layout switching.
+* **Smart Distraction Recognition:** It doesn't just look for people; it actively penalizes phone usage during focus sessions.
 
-## 🛠️ Tech Stack
-* **Frontend:** React.js, Vite
-* **AI & Machine Learning:** TensorFlow.js (`@tensorflow-models/coco-ssd`)
-* **Hardware Integration:** `react-webcam` (for hidden, background video processing)
-* **Deployment:** Vercel
+## 🧠 Under the Hood: The Detection Algorithm
+Since the code is private, here is a brief overview of the custom logic driving the AI:
+1.  **Continuous Scanning:** The app runs a background interval loop that processes webcam frames through the TensorFlow model.
+2.  **Collision Detection Logic:** To differentiate between a phone lying harmlessly on a desk and a phone actively being held, the app calculates the Bounding Box coordinates (X, Y, Width, Height) of both the `person` and the `cell phone`. It then applies a mathematical collision detection algorithm. If the boxes overlap, it triggers a "distraction alert".
 
-## 📸 Preview
+## 📸 Interface Preview
+*(Add a GIF or Screenshot of the app here, showing the Police reacting!)*
 ![Focus Guardian Preview](./assets/demo.gif)
 
 ---
 👨‍💻 **Developed by:** [Saeid Madhilaleh]
-📧 **Contact:** [saeedmadhitabriz@gmail.com]
+📧 [saeedmadhitabriz@gmail.com]
