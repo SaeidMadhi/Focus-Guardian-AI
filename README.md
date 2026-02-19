@@ -27,5 +27,5 @@ By leveraging TensorFlow.js, the application processes the webcam feed entirely 
 ![Focus Guardian Preview](./assets/demo.gif)
 
 ---
-👨‍💻 **Developed by:** [Your Name]
-📧 **Contact:** [Your LinkedIn or Email]
+👨‍💻 **Developed by:** [Saeid Madhilaleh]
+📧 **Contact:** [saeedmadhitabriz@gmail.com]
