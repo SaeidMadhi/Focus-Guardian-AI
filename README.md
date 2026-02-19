@@ -1,21 +1,27 @@
-# 🛡️ Focus Guardian | AI Productivity Assistant
+# 👮‍♂️ Focus Guardian | AI-Powered Productivity Assistant
 
-> ⚠️ **Note:** The source code is private to protect custom AI logic. This repository is a technical portfolio showcase.
-> 🔗 **[Live Demo: Try it here](https://focus-guardian-zeta.vercel.app/)**
+> ⚠️ **Note:** The source code for this project is kept **Private** to protect custom detection algorithms and intellectual property. This repository serves as a technical portfolio piece.
+
+🔗 **[Live Demo: Try Focus Guardian Here](https://focus-guardian-zeta.vercel.app/)**
 
 ## 📌 Overview
-Focus Guardian is a browser-based, real-time focus tracking application. It acts as a strict digital supervisor, using Computer Vision to ensure users stay at their desks and avoid distractions like using a smartphone during deep work sessions. Everything runs locally, prioritizing absolute user privacy.
+Focus Guardian is a web-based, real-time focus tracking application. It acts as a strict digital supervisor, using in-browser Artificial Intelligence (Computer Vision) to ensure users stay at their desks and avoid distractions during deep work sessions. By leveraging TensorFlow.js, the application processes the webcam feed entirely offline, ensuring absolute user privacy.
+
+## ✨ Core Features
+* **100% Privacy-First:** Local processing guarantees that camera data never leaves the user's device. Zero images or data are transmitted to any server.
+* **Smart Distraction Recognition:** Actively monitors the webcam feed to detect if the user is absent or holding a mobile phone (`cell phone` detection).
+* **Mathematical Bounding-Box Logic:** Calculates the overlap between the "Person" and "Phone" bounding boxes to differentiate between a phone lying safely on the desk versus one being actively held.
+* **Multi-Language Support (i18n):** Fully localized interface supporting English, Persian (RTL), and Turkish.
 
 ## 💻 Tech Stack
-* **Frontend:** React.js, JavaScript (ES6+), CSS3
-* **AI & Vision:** TensorFlow.js (COCO-SSD Model)
-* **Tools:** Vite, Vercel, react-webcam
+* **Frontend:** React.js, Vite, CSS3
+* **AI & Vision:** TensorFlow.js (`@tensorflow-models/coco-ssd`)
+* **Hardware Integration:** `react-webcam` (for hidden, background video processing)
+* **Deployment:** Vercel
 
-## ✨ Key Features
-* **100% Local Processing:** Camera feed is processed entirely in the browser. Zero data leaves the device.
-* **Smart Detection:** Uses mathematical bounding-box logic to detect if a user is absent or actively holding a smartphone.
-* **Localization:** Supports English, Turkish, and Persian (including dynamic RTL layouts).
+## 📸 Preview
+![Focus Guardian Preview](./assets/demo.gif)
 
 ---
 👨‍💻 **Developed by:** Saeid Madhilaleh
-📧 saeedmadhitabriz@gmail.com
+📧 Saeedmadhitabriz@gmail.com
