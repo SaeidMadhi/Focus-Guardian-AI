@@ -20,8 +20,10 @@ Focus Guardian is a web-based, real-time focus tracking application. It acts as 
 * **Deployment:** Vercel
 
 ## 📸 Preview
-![Focus Guardian Preview](./assets/demo.gif)
-
+![Focus Guardian Preview11](G11.png)
+![Focus Guardian Preview1](G1.png)
+![Focus Guardian Preview2](G2.png)
+![Focus Guardian Preview3](G3.png)
 ---
 👨‍💻 **Developed by:** Saeid Madhilaleh
 📧 Saeedmadhitabriz@gmail.com
